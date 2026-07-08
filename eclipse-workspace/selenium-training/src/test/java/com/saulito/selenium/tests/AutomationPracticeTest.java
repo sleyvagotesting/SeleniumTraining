@@ -43,7 +43,7 @@ public class AutomationPracticeTest {
 
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		
-		String tituloEsperado = "Practice Pageeeeeeeeee";
+		String tituloEsperado = "Practice Page";
 		String tituloActual = driver.getTitle();
 		
 		Assert.assertEquals(tituloActual, tituloEsperado);				
