@@ -14,6 +14,7 @@ public class AutomationPracticeTest {
 	@BeforeMethod
 	public void setUp() {
 		driver = new ChromeDriver();
+		//maximizar la ventana
 		driver.manage().window().maximize();
 	}
 	
