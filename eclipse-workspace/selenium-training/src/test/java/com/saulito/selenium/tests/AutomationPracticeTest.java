@@ -7,15 +7,23 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
+import org.openqa.selenium.chrome.ChromeOptions;
 public class AutomationPracticeTest {
 	//comentario
 	WebDriver driver;
 	@BeforeMethod
 	public void setUp() {
-		driver = new ChromeDriver();
-		//maximizar la ventana
-		driver.manage().window().maximize();
+		/*setup ejecucion con ventanas abiertas
+		 * 
+		 * driver = new ChromeDriver(); maximizar la ventana
+		 * driver.manage().window().maximize();
+		 */
+		
+		//setuo headless test
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless=new");
+		options.addArguments("--windows-size=1920,1080");
+		driver = new ChromeDriver(options);
 	}
 	
 	@Test
