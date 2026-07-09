@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class AutomationPracticeTest {
-	
+	//comentario
 	WebDriver driver;
 	@BeforeMethod
 	public void setUp() {
